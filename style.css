@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* environment */
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+body {
+  font-family: 'Yu Gothic', 'YuGothic', 'Meiryo', 'メイリオ', 'Hiragino Kaku Gothic Pro W6', 'ヒラギノ角ゴ ProN W6', 'ＭＳ Ｐ明朝', 'Osaka－等幅', 'Osaka-Mono', 'sans-serif';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-all;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    min-width: 1200px;
+  }
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+}
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input, textarea, select {
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+main {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* common */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc {
+    display: block;
+  }
+  .sp {
+    display: none;
+  }
+}
+
+.cf::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.more a {
+  border: 2px solid #fff;
+  border-radius: 40px;
+  display: block;
+  line-height: 1;
+  margin: 4em auto 0;
+  padding: 1em 0;
+  text-align: center;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .opa:hover {
+    opacity: .5;
+  }
+}
